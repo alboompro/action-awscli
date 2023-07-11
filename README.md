@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: welingtonsampaio/action-awscli@0.1.0
+    - uses: alboompro/action-awscli@0.1.0
       with:
         args: s3 ls
       env:

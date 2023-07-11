@@ -1,4 +1,4 @@
-name: "action-aws-cli"
+name: "alboom-awscli"
 description: "Allow GitHub Actions to use the AWS CLI."
 author: welingtonsampaio
 runs:
