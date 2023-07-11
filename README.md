@@ -9,7 +9,7 @@ This simple action uses the [vanilla AWS CLI](https://docs.aws.amazon.com/cli/in
 
 Place in a `.yml` file such as this one in your `.github/workflows` folder. [Refer to the documentation on workflow YAML syntax here.](https://help.github.com/en/articles/workflow-syntax-for-github-actions)
 
-As of v0.1.0, all [`aws` flags](https://docs.aws.amazon.com/cli/latest/reference/) are optional to allow for maximum customizability (that's a word, I promise) and must be provided by you via `args:`.
+As of v0.1.1, all [`aws` flags](https://docs.aws.amazon.com/cli/latest/reference/) are optional to allow for maximum customizability (that's a word, I promise) and must be provided by you via `args:`.
 
 ```yaml
 name: AWS CLI to S3
@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: alboompro/action-awscli@0.1.0
+    - uses: alboompro/action-awscli@0.1.1
       with:
         args: s3 ls
       env:
