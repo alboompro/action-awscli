@@ -1,0 +1,9 @@
+name: "AWS CLI"
+description: "Allow GitHub Actions to use the AWS CLI."
+author: welingtonsampaio
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: refresh-cw
+  color: green
